@@ -2,7 +2,7 @@ var express = require('express');
 var routes = express.Router();
 var neo4j = require('neo4j-driver').v1;
 
-var driver = neo4j.driver("bolt://localhost", neo4j.auth.basic("neo4j","gekkehenk21"));
+var driver = neo4j.driver("bolt://hobby-gkomkckeehocgbkeapcnljal.dbs.graphenedb.com:24786", neo4j.auth.basic("movie","b.lh506p7aAWxB.dwlM2RFL23wZVjp3"));
 var session = driver.session();
 
 routes.post('/add/:id',function (req,res) {
